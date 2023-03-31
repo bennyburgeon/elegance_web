@@ -67,7 +67,7 @@
 					<span class="icon-menu"></span>
 				</button>
 				<div class="col-lg-auto col-lg-2 d-flex align-items-lg-center">
-					<a href="index.html" class="header-logo"><img src="{{ asset('public/images/logo.png') }}" alt="" class="img-fluid"></a>
+					<a href="{{ route('dashboard') }}" class="header-logo"><img src="{{ asset('public/images/logo.png') }}" alt="" class="img-fluid"></a>
 				</div>
 				<div class="col-lg ml-auto header-nav-wrap">
 					<div class="header-nav js-header-nav">

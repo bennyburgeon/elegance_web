@@ -2,12 +2,19 @@
 
 namespace App\Http\Controllers;
 use App\Models\Customer;
+use App\Models\Carousalmodel;
+use App\Models\Marqueemodel;
+use App\Models\Cardmodel;
+use App\Models\Treatmentmodel;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
 {
     public function index(){
-        return view('web.index');
+        $data=Carousalmodel::all();
+        $marq=Marqueemodel::all();
+        // dd($marq[0]->textarea);
+        return view('web.index',compact('data','marq'));
     }
 
     public function customerCheckLogin(){
@@ -19,7 +26,8 @@ class WebController extends Controller
         return view('web.customer-portal',compact('customerdetails'));
     }
     public function salons(){
-        return view('web.salons');
+        $data=Cardmodel::all();
+        return view('web.salons',compact('data'));
     }
     public function treatemnts(){
         return view('web.treatment');

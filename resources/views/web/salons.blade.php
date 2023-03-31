@@ -122,12 +122,13 @@
 							</div>
 							
 						</div> -->
+						@foreach($data as $keys)
 						<div class="prd">
 							<div class="prd-img">
-								<a href="salon-details-1.html"><img src="{{ asset('public/images/product/salon-2.jpg')}}" class="img-fluid" alt=""></a>
+								<a href="salon-details-1.html"><img src="{{env('IMG_URL')}}/{{$keys->image}}" class="img-fluid" alt=""></a>
 							</div>
 							<div class="prd-info">
-								<h3><a href="salon-details-1.html">Hair and Beauty Salon Aberdeen</a></h3>
+								<h3><a href="salon-details-1.html">{{$keys->title}}</a></h3>
 								
 								<div class="star-rating"><img src="{{ asset('public/images/content/testimonials-author-3-1.png')}}" alt=""></span>
 									<span class="rating-text"><img src="{{ asset('public/images/content/testimonials-author-3-2.png')}}" alt=""></span>
@@ -135,73 +136,7 @@
 								<a href="salon-details-1.html" class="btn"><i class="icon-right-arrow"></i>View Salon<i class="icon-right-arrow"></i></a>
 							</div>
 						</div>
-						<div class="prd">
-							<div class="prd-img">
-								<a href="salon-details-2.html"><img src="{{ asset('public/images/product/salon-3.jpg')}}" class="img-fluid" alt=""></a>
-							</div>
-							<div class="prd-info">
-								<h3><a href="salon-details-2.html">Hair and Beauty Salon Stirling</a></h3>
-								
-								<div class="star-rating"><img src="{{ asset('public/images/content/testimonials-author-3-1.png')}}" alt=""></span>
-									<span class="rating-text"><img src="{{ asset('public/images/content/testimonials-author-3-2.png')}}" alt=""></span>
-								</div>
-								<a href="salon-details-2.html" class="btn"><i class="icon-right-arrow"></i>View Salon<i class="icon-right-arrow"></i></a>
-							</div>
-						</div>
-						
-						<div class="prd">
-							<div class="prd-img">
-								<a href="salon-details-4.html"><img src="{{ asset('public/images/product/salon-5.jpg')}}" class="img-fluid" alt=""></a>
-							</div>
-							<div class="prd-info">
-								<h3><a href="salon-details-4.html">Express Beauty, Wellgate Shopping Centre (Dundee)</a></h3>
-								
-								<div class="star-rating"><img src="{{ asset('public/images/content/testimonials-author-3-1.png')}}" alt=""></span>
-									<span class="rating-text"><img src="{{ asset('public/images/content/testimonials-author-3-2.png')}}" alt=""></span>
-								</div>
-								<a href="salon-details-4.html" class="btn"><i class="icon-right-arrow"></i>View Salon<i class="icon-right-arrow"></i></a>
-							</div>
-						</div>
-						
-						<div class="prd">
-							<div class="prd-img">
-								<a href="salon-details-6.html"><img src="{{ asset('public/images/product/salon-7.jpg')}}" class="img-fluid" alt=""></a>
-							</div>
-							<div class="prd-info">
-								<h3><a href="salon-details-6.html">Hair and Beauty Salon, Overgate Centre (Dundee)</a></h3>
-								
-								<div class="star-rating"><img src="{{ asset('public/images/content/testimonials-author-3-1.png')}}" alt=""></span>
-									<span class="rating-text"><img src="{{ asset('public/images/content/testimonials-author-3-2.png')}}" alt=""></span>
-								</div>
-								<a href="salon-details-6.html" class="btn"><i class="icon-right-arrow"></i>View Salon<i class="icon-right-arrow"></i></a>
-							</div>
-						</div>
-						<div class="prd">
-							<div class="prd-img">
-								<a href="salon-details-7.html"><img src="{{ asset('public/images/product/salon-8.jpg')}}" class="img-fluid" alt=""></a>
-							</div>
-							<div class="prd-info">
-								<h3><a href="salon-details-7.html">Express Beauty, Overgate Centre (Dundee)</a></h3>
-								
-								<div class="star-rating"><img src="{{ asset('public/images/content/testimonials-author-3-1.png')}}" alt=""></span>
-									<span class="rating-text"><img src="{{ asset('public/images/content/testimonials-author-3-2.png')}}" alt=""></span>
-								</div>
-								<a href="salon-details-7.html" class="btn"><i class="icon-right-arrow"></i>View Salon<i class="icon-right-arrow"></i></a>
-							</div>
-						</div>
-						<div class="prd">
-							<div class="prd-img">
-								<a href="salon-details-8.html"><img src="{{ asset('public/images/product/salon-9.jpg')}}" class="img-fluid" alt=""></a>
-							</div>
-							<div class="prd-info">
-								<h3><a href="salon-details-8.html">Hair and Beauty Salon Fortkinnaird</a></h3>
-								
-								<div class="star-rating"><img src="{{ asset('public/images/content/testimonials-author-3-1.png')}}" alt=""></span>
-									<span class="rating-text"><img src="{{ asset('public/images/content/testimonials-author-3-2.png')}}" alt=""></span>
-								</div>
-								<a href="salon-details-8.html" class="btn"><i class="icon-right-arrow"></i>View Salon<i class="icon-right-arrow"></i></a>
-							</div>
-						</div>
+						@endforeach
 					</div>
 					<div class="clearfix"></div>
 					

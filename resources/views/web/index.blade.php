@@ -73,9 +73,9 @@
 				</div>
 			</div>
 			<div class="main-slider mb-0 arrows-white arrows-bottom" id="mainSlider" data-slick='{"arrows": false, "dots": true}'>
-				
+				@foreach($data as $keys)
 				<div class="slide">
-					<div class="img--holder" data-bg="{{ asset('public/images/content/slider/slide-02.jpg') }}"></div>
+					<div class="img--holder" data-bg="{{env('IMG_URL')}}/{{$keys->image}}"> </div>
 					<div class="slide-content center">
 						<div class="vert-wrap container">
 							<div class="vert">
@@ -90,61 +90,13 @@
 						</div>
 					</div>
 				</div>
-				
-				<div class="slide">
-					<div class="img--holder" data-bg="images/content/slider/slide-01.jpg"></div>
-					<div class="slide-content center">
-						<div class="vert-wrap container">
-							<div class="vert">
-								<div class="container">
-									<div class="slide-txt1 text-no-uppercase" data-animation="fadeInDown" data-animation-delay="1s"><b>The Best Salon
-                                        Experience</b><br>
-										in the UK</div>
-									<div class="slide-txt2 text-no-uppercase" data-animation="fadeInUp" data-animation-delay="1.5s">Advanced medicine. Compassionate care</div>
-									<div class="slide-btn"><a href="treatments1213.html" class="btn link-inside" data-animation="fadeInUp" data-animation-delay="2s"><i class="icon-right-arrow"></i><span>Explore our services</span><i class="icon-right-arrow"></i></a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="slide">
-					<div class="img--holder" data-bg="images/content/slider/slide-03.jpg"></div>
-					<div class="slide-content center">
-						<div class="vert-wrap container">
-							<div class="vert">
-								<div class="container">
-									<div class="slide-txt1 text-no-uppercase" data-animation="fadeInDown" data-animation-delay="1s">Your Satisfaction
-										<br><b>is Our
-                                        Promise</b></div>
-									<div class="slide-txt2 text-no-uppercase" data-animation="fadeInUp" data-animation-delay="1.5s">Highest standards of customer service</div>
-									<div class="slide-btn"><a href="treatments1213.html" class="btn link-inside" data-animation="fadeInUp" data-animation-delay="2s"><i class="icon-right-arrow"></i><span>Know more</span><i class="icon-right-arrow"></i></a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img--holder" data-bg="images/content/slider/slide-04.jpg"></div>
-					<div class="slide-content center">
-						<div class="vert-wrap container">
-							<div class="vert">
-								<div class="container">
-									<div class="slide-txt1 text-no-uppercase" data-animation="fadeInDown" data-animation-delay="1s">We Only Use
-										<br><b>Top Quality Products</b></div>
-									<div class="slide-txt2 text-no-uppercase" data-animation="fadeInUp" data-animation-delay="1.5s">Highest standards of customer service</div>
-									<div class="slide-btn"><a href="treatments1213.html" class="btn link-inside" data-animation="fadeInUp" data-animation-delay="2s"><i class="icon-right-arrow"></i><span>Know more</span><i class="icon-right-arrow"></i></a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				@endforeach
 			</div>
 		</div>
 	</div>
 	<!--//section slider-->
 	<div class="text-center max-670 mt-4 mx-md-auto">
-					<marquee><a href="#" class="btn btn-xs btn-gradient" data-toggle="modal" data-target="#modalBookingForm" style="background-color: #818080;"><i class="icon-placeholder2" style="color: black;"></i><span>Notification: Check our latest offers & book online.</span><i class="icon-right-arrow"></i></a></marquee>
+					<marquee><a href="#" class="btn btn-xs btn-gradient" data-toggle="modal" data-target="#modalBookingForm" style="background-color: #818080;"><i class="icon-placeholder2" style="color: black;"></i><span>{{$marq[0]->textarea}}.</span><i class="icon-right-arrow"></i></a></marquee>
 	</div>
 	<!--section departments-->
 	<div class="section bg-bottom bg-right bg-norepeat bg-md-none bg-fixed section-bottom-padding section-top-padding" style="background-image: url(images/bg-bottom-right.png)">

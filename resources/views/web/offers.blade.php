@@ -57,7 +57,7 @@
 			<div class="container-fluid px-0">
 				<div class="row no-gutters">
 				
-					<div class="col-xl-6 banner-left bg-cover align-items-end" style="background-image: url(images/content/banner-left11.jpg)"></div>
+					<div class="col-xl-6 banner-left bg-cover align-items-end" style="background-image: url(images/content/banner-left9.jpg)"></div>
 					<div class="col-xl-6">
 						<div class="faq-wrap">
 							<div class="text-center text-md-left">
