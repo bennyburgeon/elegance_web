@@ -60,7 +60,7 @@
 				
 					<div class="col-xl-6  bg-cover" style="">
 						<div class="santa fadeIn first">
-							<img src="{{ asset('public/images/banner-left11 (1).jpg') }}" alt=""></div>
+							<img src="{{ asset('public/images/elegance_rewards.png') }}" alt=""></div>
 							<!-- <h1>SIGN IN TO REDEEM OFFERS</h1> -->
 							<!-- <div id="formContent"> -->
 								<!-- Tabs Titles -->
@@ -92,7 +92,7 @@
 						<div id="formContent">
 							<!-- Tabs Titles -->
 							<h2 class="active"> Sign In </h2>
-							<h2 class="inactive underlineHover">Sign Up </h2>
+							<!-- <h2 class="inactive underlineHover">Sign Up </h2> -->
 							<!-- Icon -->
 							<div class="fadeIn first">
 								<img src="{{ asset('public/images/woman.png') }}" style="border-radius: 50%;width:120px" id="icon" alt="User Icon" />
