@@ -67,7 +67,7 @@
 					<span class="icon-menu"></span>
 				</button>
 				<div class="col-lg-auto col-lg-2 d-flex align-items-lg-center">
-					<a href="{{ route('dashboard') }}" class="header-logo"><img src="{{ asset('public/images/logo.png') }}" alt="" class="img-fluid"></a>
+					<a href="https://elegancesalons.co.uk/" class="header-logo"><img src="{{ asset('public/images/logo.png') }}" alt="" class="img-fluid"></a>
 				</div>
 				<div class="col-lg ml-auto header-nav-wrap">
 					<div class="header-nav js-header-nav">
@@ -75,28 +75,31 @@
 							<div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
 								<ul class="navbar-nav">
 									<li class="nav-item">
-										<a class="nav-link" href="{{ route('salons') }}">Find a Salon</a>
+										<a class="nav-link" href="https://elegancesalons.co.uk/salons.html">Find a Salon</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="{{ route('treatemnts') }}">Treatments</a>
-									</li>
-									
-									<li class="nav-item">
-										<a class="nav-link" href="{{ route('offers') }}">Offers</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="{{ route('appointment') }}">Make an Appointment</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="{{ route('packages') }}">Packages</a>
+										<a class="nav-link" href="https://elegancesalons.co.uk/treatments1213.html">Treatments</a>
 									</li>
 									
 									<li class="nav-item">
-										<a class="nav-link" href="{{ route('careers') }}">Careers</a>
+										<a class="nav-link" href="https://elegancesalons.co.uk/offers.html">Offers</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="{{ route('contacts') }}">Contact Us</a>
-									</li>	
+										<a class="nav-link" href="https://elegancesalons.co.uk/appointment.html">Make an Appointment</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="https://elegancesalons.co.uk/packages.html">Packages</a>
+									</li>
+									
+									<li class="nav-item">
+										<a class="nav-link" href="https://elegancesalons.co.uk/careers.html">Careers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="https://elegancesalons.co.uk/contact.html">Contact Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="https://web.elegancesalons.co.uk/login">Login</a>
+									</li>
 								</ul>
 							</div>
 						</nav>
